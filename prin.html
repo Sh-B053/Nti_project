@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+
+    <link rel="stylesheet" href="prin.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+            <div class="logo">
+                <h2>Books</h2>
+            </div>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="#">Books</a>
+                <a href="./text.html">Categories</a>
+                <a href="./details.html">Detais</a>
+                <div class="header-icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+            </nav>
+        </header>
+
+
+    <section class="hero">
+
+        <h1>All Books</h1>
+
+        <p>Find your next great read</p>
+
+    </section>
+
+
+    <section class="search-box">
+
+        <div class="search">
+
+            <input type="text" id="search" placeholder="Search books...">
+
+            <button onclick="searchBook()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <select>
+            <option>All Categories</option>
+            <option>Fiction</option>
+            <option>Romance</option>
+            <option>Science</option>
+            <option>Technology</option>
+            <option>History</option>
+            <option>Kids</option>
+        </select>
+
+    </section>
+
+
+    <div class="categories">
+
+        <button class="active">All</button>
+        <button>Fiction</button>
+        <button>Romance</button>
+        <button>Science</button>
+        <button>Technology</button>
+        <button>History</button>
+        <button>Kids</button>
+
+    </div>
+
+
+    <section class="books" id="books">
+
+        <div class="card">
+
+            <i class="fa-regular fa-heart heart"></i>
+
+            <img src="images/project1.png">
+
+            <h3>The Midnight Library</h3>
+
+            <p>Matt Haig</p>
+
+            <div class="stars">
+                <span>(142)</span>
+            </div>
+
+            <h2>$12.99</h2>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-regular fa-heart heart"></i>
+
+            <img src="images/project2.png">
+
+            <h3>Educated</h3>
+
+            <p>Tara Westover</p>
+
+            <div class="stars">
+                ★★★★★
+                <span>(98)</span>
+            </div>
+
+            <h2>$13.99</h2>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-regular fa-heart heart"></i>
+
+            <img src="images/project3.png">
+
+            <h3>Sapiens</h3>
+
+            <p>Yuval Noah Harari</p>
+
+            <div class="stars">
+
+                <span>(176)</span>
+            </div>
+
+            <h2>$15.99</h2>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-regular fa-heart heart"></i>
+
+            <img src="images/project4.png">
+
+            <h3>The Seven Husbands Of Evelyn Hugo</h3>
+
+            <p>Taylor Jenkins Reid</p>
+
+            <div class="stars">
+
+                <span>(120)</span>
+            </div>
+
+            <h2>$12.99</h2>
+
+        </div>
+
+    </section>
+
+
+    <div class="pagination">
+
+        <button class="page active">1</button>
+
+        <button class="page">2</button>
+
+        <button class="page">3</button>
+
+        <button class="next">Next</button>
+
+    </div>
+
+
+<footer class="footer" id="contact">
+        <p>© 2026 Books. All Rights Reserved.</p>
+    </footer>
+
+    <script src="prin.js"></script>
+
+</body>
+
+</html>

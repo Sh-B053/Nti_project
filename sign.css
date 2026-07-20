@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* -----------------signup----------------------- */
+.signup{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to left, #5C3D2E, #EADBC8, #F8F5F2);    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+.signup-container{
+    width: 100%;
+    max-width: 900px;
+}
+.signup-card{
+    display: flex;
+    background-color: #EADBC8;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    animation-name: sh;
+    animation-duration: 0.8s;
+    animation-direction: alternate-reverse;
+}
+@keyframes sh{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.signup-form{
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signup-form h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #5C3D2E;
+}
+.input-box{
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-box input{
+    width: 100%;
+    border: none;
+    background-color: #EADBC8;
+    border-bottom:2px solid #0e0d0d ;
+    padding: 12px 35px 12px 5px ;
+    font-size: 16px;
+}
+.input-box input::placeholder{
+    color: #5C3D2E;
+}
+.input-box i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+}
+.error{
+    color: red;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+button{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    background: #5C3D2E;
+    color: #F8F5F2;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+button:hover{
+    background: #5c3d2eb3;
+    transform: translateY(-3px);
+}
+.signup-image{
+    width: 50%;
+}
+.signup-image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 0 25px 25px 0;
+}
+@media(max-width:768px){
+    .signup-card{
+        flex-direction: column-reverse;
+    }
+    .signup-form{
+        width: 100%;
+        padding: 35px 25px;
+    }
+    .signup-image{
+        width: 100%;
+        height: 280px;
+    }
+    .signup-form h1{
+        font-size: 30px;
+        text-align: center;
+    }
+}

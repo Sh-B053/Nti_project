@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+
+    <link rel="stylesheet" href="text.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+            <div class="logo">
+                <h2>Books</h2>
+            </div>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./prin.html">Books</a>
+                <a href="#categories">Categories</a>
+                <a href="./details.html">Detais</a>
+                <div class="header-icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+            </nav>
+        </header>
+
+    <!--========== Cart ==========-->
+
+    <div class="container">
+
+        <h1>Your Cart</h1>
+
+        <div class="cart">
+
+            <div class="left">
+
+                <table>
+
+                    <tr class="head">
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="book">
+                            <img src="images/Screenshot 2026-07-19 225941.png">
+
+                            <div>
+                                <h3>The Night Circus</h3>
+                                <p>Erin Morgenstern</p>
+                            </div>
+
+                        </td>
+
+                        <td>$16.99</td>
+
+                        <td>
+
+                            <div class="qty">
+
+                                <button onclick="decrease(0)">-</button>
+
+                                <span id="q0">1</span>
+
+                                <button onclick="increase(0)">+</button>
+
+                            </div>
+
+                        </td>
+
+                        <td id="t0">$16.99</td>
+
+                        <td>
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="book">
+
+                            <img src="images/Screenshot 2026-07-19 230009.png">
+
+                            <div>
+                                <h3>Atomic Habits</h3>
+                                <p>James Clear</p>
+                            </div>
+
+                        </td>
+
+                        <td>$11.99</td>
+
+                        <td>
+
+                            <div class="qty">
+
+                                <button onclick="decrease(1)">-</button>
+
+                                <span id="q1">1</span>
+
+                                <button onclick="increase(1)">+</button>
+
+                            </div>
+
+                        </td>
+
+                        <td id="t1">$11.99</td>
+
+                        <td>
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="book">
+
+                            <img src="images/Screenshot 2026-07-19 230054.png">
+
+                            <div>
+
+                                <h3>The Silent Patient</h3>
+
+                                <p>Alex Michaelides</p>
+
+                            </div>
+
+                        </td>
+
+                        <td>$14.99</td>
+
+                        <td>
+
+                            <div class="qty">
+
+                                <button onclick="decrease(2)">-</button>
+
+                                <span id="q2">1</span>
+
+                                <button onclick="increase(2)">+</button>
+
+                            </div>
+
+                        </td>
+
+                        <td id="t2">$14.99</td>
+
+                        <td>
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+            <div class="summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="row">
+
+                    <span>Subtotal</span>
+
+                    <span id="subtotal">$43.97</span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Shipping</span>
+
+                    <span>$5.00</span>
+
+                </div>
+
+                <hr>
+
+                <div class="row total">
+
+                    <span>Total</span>
+
+                    <span id="grand">$48.97</span>
+
+                </div>
+
+                <button class="checkout">
+
+                    Proceed to Checkout
+
+                </button>
+
+                <a href="#">← Continue Shopping</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<footer class="footer" id="contact">
+        <p>© 2026 Books. All Rights Reserved.</p>
+    </footer>
+
+    <script src="text.js"></script>
+
+</body>
+
+</html>
