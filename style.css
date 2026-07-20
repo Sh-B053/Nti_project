@@ -34,7 +34,20 @@
     justify-content: center;
     gap: 35px;
 }
+.logo h2{
+    margin: 0;
+}
 
+.logo a{
+    text-decoration: none;
+    color: #EADBC8;
+    font-size: 30px; 
+    transition: .3s;
+}
+
+.logo a:hover{
+    color: #cd7605;
+}
 .navbar a{
     text-decoration: none;
     color: #EADBC8;
